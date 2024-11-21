@@ -1,0 +1,79 @@
+/*===================
+Portfolio
+===================*/
+.main-content {
+  flex: 1 1 80%;
+  min-height: 100vh;
+}
+
+.portfolio {
+  display: grid;
+  height: 100%;
+  grid-template-rows: repeat(400, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2px;
+}
+
+.portfolio-item {
+  background: gold;
+  color: gray;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5em;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  transition: all ease-in-out 300ms;
+  position: relative;
+  z-index: 10;
+}
+
+.portfolio #pic_sm {
+  background-image: url('Modeling_2.jpeg');
+}
+.portfolio #pic_md {
+  background-image: url('GWGoogle.jpeg');
+}
+.portfolio #pic_lg {
+  background-image: url('Modeling_3.jpeg');
+}
+
+.back_picture::before {
+  content: '';
+  display: block;
+  background: rgba(169,169,169,0.5);
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all ease-in-out 300ms;
+  z-index: -1;
+}
+
+.back_picture:hover::before {
+  opacity: 0.2;
+}
+.portfolio .small {
+  grid-row: span 150;
+  grid-column: span 1;
+}
+
+.portfolio .medium {
+  grid-row: span 250;
+  grid-column: span 1;
+}
+
+.portfolio .large {
+  grid-row: span 400;
+  grid-column: span 1;
+}
+
+.portfolio-item:hover {
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.85);
+}

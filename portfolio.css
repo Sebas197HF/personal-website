@@ -1,0 +1,120 @@
+html{
+	height: 100%;
+}
+
+body{
+	font-family: Lato;
+	text-align: justify;
+	font-size: 20px;
+}
+
+section {
+	height: 100vh;
+	width: 100%;
+	padding-bottom: 5%;
+	padding-top: 50px;
+}
+
+h1 {
+	text-align: center;
+	text-shadow: 
+		0px 4px 3px rgba(0,0,0,0.4),
+		0px 8px 13px rgba(0,0,0,0.1),
+		0px 18px 23px rgba(0,0,0,0.1);
+
+}
+
+h2, h3, h4 {
+	font-weight: bold;
+}
+
+.thumbnail {
+	border:0;
+	padding: 0;
+}
+
+.navbar {
+	background: black;
+}
+
+
+.mainTitle {
+	text-align: left;
+	font-size: 70px;
+	font-weight: bold;
+	text-shadow: 
+		0px 4px 3px rgba(0,0,0,0.4),
+		0px 8px 13px rgba(0,0,0,0.1),
+		0px 18px 23px rgba(0,0,0,0.1);
+	border-left: 5px solid gold;
+	padding-left: 10px;
+	margin-bottom: 50px;
+}
+
+.boldLetters {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.centerblock {
+	padding: 20%;
+	font-size: 20px;
+}
+
+#pictures_layout {
+	align-items: center;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 5%;
+}
+
+#mainpage .mainTitle {
+	margin-top: 55px;
+}
+
+#mainpage p {
+	padding-left: 10px;
+}
+
+#hobbies p {
+	font-size: 20px;
+}
+
+#washu {
+	color: rgb(128,0,0);
+}
+
+#benedict {
+	color: #800080;
+}
+
+/* ------- Style for each section ------- */
+
+#mainpage {
+	background: url('JhoanBenedict.jpeg');
+	background-size: cover;
+	background-position: center;
+	color: white;
+}
+
+#path {
+	height: 100%;
+	background-color: #F5F5DC;
+}
+
+#interests {
+	background-color: #2F4F4F;
+	height: 100%;
+	color: white;
+}
+
+#hobbies {
+	height: 100%;
+	background-color: #DCDCDC;
+}
+
+#contact {
+	background-color: black;
+	color: white;
+	height: 100%;
+}
